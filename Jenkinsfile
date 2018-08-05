@@ -1,15 +1,12 @@
 pipeline {
-	agent any 
+	agent any
 	stages {
 		stage ('Building Stage'){
 		     steps {
-                		sh 'npm --version'
-            		}			
+                		sh 'docker build . '
+            	}
 		}
-		
-	
+
+
 	}
-	
-
-
-} 
+}
